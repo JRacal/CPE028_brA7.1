@@ -3,7 +3,7 @@ import requests
 
 main_api = "https://www.mapquestapi.com/directions/v2/route?" 
 key = "pAkaoNhN3vABwed7BgrP6nFxGphwykfo"
-
+#added welcome screen
 print("=============================================")
 print("Welcome to mapQuest")
 print("=============================================")
@@ -38,9 +38,11 @@ while True:
         print("For Staus Code: " + str(json_status) + "; Refer to:")
         print("https://developer.mapquest.com/documentation/directions-api/status-codes")
         print("************************************************************************\n")
-    stay = input("Do you wish to continue?(yes/no):")
-    if stay == "no":
+    stay = input("Do you wish to continue?(yes/no):") #Added option to continue and remove quit/q from both location and destination.
+    if stay == "no":#ends the code
         print("=============================================")
         print("Thanks for using the MapQuest")
         print("=============================================")
-        break
+        break 
+    else:#continue running
+        print("=============================================")
